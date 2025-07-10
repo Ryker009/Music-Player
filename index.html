@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/11705370.webp" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_left">
+                <div class="logo"><img src="img/11705370.webp" alt="logo_image">
+                </div>
+                <div class="home">
+                    <img src="img/home-icon-symbolizing-comfort-digital-design-minimalist-style-modern-aesthetic-free-png.webp" alt="home_page">
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Type Song Name">
+                </div>
+            </div>
+            <div class="nav_right">
+                <div class="nav_right_up">
+                    <li>Premium</li>
+                    <li>Support</li>
+                    <li>Download</li>
+                </div>
+                <p>|</p>
+                <div class="nav_right_down">
+                    <li>Install App</li>
+                    <li>Sign Up</li>
+                    <button>Log In</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="left">
+            <div class="playListDrop">
+
+                <!--Ai code-->
+
+                <div class="dropdown">
+                    <button onclick="toggleDropdown()">Playlist ⏷</button>
+                    <div class="dropdown-content" id="playlistDropdown">
+                        <button onclick="selectPlaylist('emotional')">Emotional</button>
+                        <button onclick="selectPlaylist('hard')">Hard</button>
+                        <button onclick="selectPlaylist('emotional')">Emotional</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="songList">
+                <ul></ul>
+            </div>
+
+
+        </div>
+        <div class="right">
+            <div class="box">
+                <h2>Title Album</h2>
+
+                <div class="card_box">
+
+                    <!-- Naruto SONGS -->
+                    <div class="card" data-folder="emotional" data-song-index="0"> 
+                        <div class="image">
+                            <img src="img/141275-1080x1920-iphone-full-hd-naruto-wallpaper-photo.webp" alt="song_image">
+                        </div>
+                        <div class="title">
+                            <h4>Naruto Pain</h4>
+                            <p>Bg Music By Naruto</p>
+                        </div>
+                        <button class="playBtn">Play</button>
+                    </div>
+
+                    <!-- EMOTIONAL SONGS -->
+                    <div class="card" data-folder="emotional" data-song-index="0">
+                        <div class="image">
+                            <img src="img/wp11681827.webp" alt="song_image">
+                        </div>
+                        <div class="title">
+                            <h4>Emotional Songs</h4>
+                            <p>Relaxing | Sad | Calm</p>
+                        </div>
+                        <button class="playBtn">Play</button>
+                    </div>
+
+                    <!-- HARD SONGS -->
+                    <div class="card" data-folder="hard" data-song-index="0">
+                        <div class="image">
+                            <img src="img/wp11681827.webp" alt="song_image">
+                        </div>
+                        <div class="title">
+                            <h4>Hard Songs</h4>
+                            <p>Hype | Battle | Motivation</p>
+                        </div>
+                        <button class="playBtn">Play</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr>
+            <!-- footer -->
+            <div class="foot">
+                <div class="b">
+                    <li>
+                        <h2>Company</h2>
+                    </li>
+                    <li>About</li>
+                    <li>Job</li>
+                    <li>Future</li>
+                    <li>Record</li>
+                </div>
+                <div class="b">
+                    <li>
+                        <h2>Links</h2>
+                    </li>
+                    <li>About</li>
+                    <li>Job</li>
+                    <li>Future</li>
+                    <li>Record</li>
+                </div>
+                <div class="b">
+                    <li>
+                        <h2>Support</h2>
+                    </li>
+                    <li>About</li>
+                    <li>Job</li>
+                    <li>Future</li>
+                    <li>Record</li>
+                </div>
+                <div class="b">
+                    <li>
+                        <h2>Nothing</h2>
+                    </li>
+                    <li>About</li>
+                    <li>Job</li>
+                    <li>Future</li>
+                    <li>Record</li>
+                </div>
+                <div class="b">
+                    <img src="img/74310-instagram-icons-media-computer-social-logo-thumb.webp" alt="social_media_png">
+                    <img src="img/74310-instagram-icons-media-computer-social-logo-thumb.webp" alt="social_media_png">
+                    <img src="img/74310-instagram-icons-media-computer-social-logo-thumb.webp" alt="social_media_png">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="copyright">
+                <p>@rakaCopyright</p>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="play">
+            <div class="play_btn">
+                <button class="pre"><img src="img/previous-stroke-standard.svg" alt="pre"></button>
+                <button class="pause"><img src="img/play-circle-stroke-rounded.svg" alt="pause"></button>
+                <button class="next"><img src="img/next-stroke-standard.svg" alt="next"></button>
+            </div>
+            <div class="audio">
+                <audio id="audioPlayer" controls></audio>
+            </div>
+        </div>
+    </footer>
+
+    <script src="code.js"></script>
+</body>
+
+</html>
