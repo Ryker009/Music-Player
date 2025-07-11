@@ -198,11 +198,88 @@ hr{
 
 
 /* song list */
-.songList{
-    width: 20vw;
-    height: 20vw;
-    background-color: red;
+
+.left{
+    display: flex;
+    justify-content: flex-end;
+    
+    align-items: center;
+    flex-direction: column;
 }
+.songList{
+    width: 18vw;
+    height: 2vw;
+    background-color: red;
+    padding: 10px 30px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.playListDrop{
+    /* display: flex; */
+    font-size: larger;
+
+}
+
+.detail{
+    /* background-color: rgb(26, 114, 191); */
+    width: 300px;
+    height: 20px;
+    margin: 0 0 0 150px;
+    /* transition: 10s ease; */
+    animation-name: slide;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+/* .hidden{
+    overflow: border: ;
+} */
+@keyframes slide{
+    0%{
+        margin: 0 0 0 150px;
+    }100%{
+        margin: 0 0 0 1px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -210,31 +287,31 @@ hr{
 
 
 /* Style the dropdown container */
-    .dropdown {
+    /* .dropdown {
       position: relative;
       display: inline-block;
-    }
+    } */
 
     /* Hide the dropdown content by default */
-    .dropdown-content {
+    /* .dropdown-content {
       display: none;
       position: absolute;
       background-color: #f9f9f9;
       min-width: 160px;
       box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
       z-index: 1;
-    }
+    } */
 
     /* Style each item */
-    .dropdown-content button {
+    /* .dropdown-content button {
       width: 100%;
       padding: 10px;
       border: none;
       background: white;
       text-align: left;
       cursor: pointer;
-    }
+    } */
 
-    .dropdown-content button:hover {
+    /* .dropdown-content button:hover {
       background-color: #f1f1f1;
-    }
+    } */

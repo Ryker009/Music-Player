@@ -1,5 +1,6 @@
 const audio = document.getElementById("audioPlayer");
 const buttons = document.querySelectorAll(".playBtn");
+const detail_li = document.querySelector('.detail li')
 
 //songs
 const playlists = {
@@ -41,6 +42,7 @@ function playSong(){
         let randomPlay = randomSong(song);
         let songSrc = playlists[song][randomPlay];
         console.log(songSrc);
+        detail_li.innerText = songSrc;
         audio.src = songSrc;
 
         audio.play();
@@ -63,6 +65,7 @@ function pre(randomPlay, song) {
     }
     let preSong = playlists[song][randomPlay];
     console.log(preSong);
+    detail_li.innerText = preSong;
     audio.src = preSong;
     audio.play();
   });
@@ -78,6 +81,7 @@ function next(randomPlay, song) {
     }
     let nextSong = playlists[song][randomPlay];
     console.log(nextSong);
+    detail_li.innerText = nextSong;
     audio.src = nextSong;
     audio.play();
   });
@@ -105,20 +109,25 @@ playBtn.addEventListener("click", () => {
 
 // <--Ai code-->
 
-function toggleDropdown() {
-    const dropdown = document.getElementById("playlistDropdown");
-    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
-  }
 
-  function selectPlaylist(name) {
-    alert("Selected playlist: " + name);
-    // You can load playlist logic here
-    document.getElementById("playlistDropdown").style.display = "none"; // close dropdown
-  }
 
-  // Optional: close dropdown if clicked outside
-  window.onclick = function(e) {
-    if (!e.target.matches('.dropdown button')) {
-      document.getElementById("playlistDropdown").style.display = "none";
-    }
-  }
+
+
+
+// function toggleDropdown() {
+//     const dropdown = document.getElementById("playlistDropdown");
+//     dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+//   }
+
+//   function selectPlaylist(name) {
+//     alert("Selected playlist: " + name);
+//     // You can load playlist logic here
+//     document.getElementById("playlistDropdown").style.display = "none"; // close dropdown
+//   }
+
+//   // Optional: close dropdown if clicked outside
+//   window.onclick = function(e) {
+//     if (!e.target.matches('.dropdown button')) {
+//       document.getElementById("playlistDropdown").style.display = "none";
+//     }
+//   }
