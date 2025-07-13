@@ -106,28 +106,3 @@ playBtn.addEventListener("click", () => {
 
 
 //left side
-
-// <--Ai code-->
-
-
-
-
-
-
-// function toggleDropdown() {
-//     const dropdown = document.getElementById("playlistDropdown");
-//     dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
-//   }
-
-//   function selectPlaylist(name) {
-//     alert("Selected playlist: " + name);
-//     // You can load playlist logic here
-//     document.getElementById("playlistDropdown").style.display = "none"; // close dropdown
-//   }
-
-//   // Optional: close dropdown if clicked outside
-//   window.onclick = function(e) {
-//     if (!e.target.matches('.dropdown button')) {
-//       document.getElementById("playlistDropdown").style.display = "none";
-//     }
-//   }
