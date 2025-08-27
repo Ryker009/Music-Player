@@ -16,7 +16,8 @@
                 <div class="logo"><img src="img/11705370.webp" alt="logo_image">
                 </div>
                 <div class="home">
-                    <img src="img/home-icon-symbolizing-comfort-digital-design-minimalist-style-modern-aesthetic-free-png.webp" alt="home_page">
+                    <img src="img/home-icon-symbolizing-comfort-digital-design-minimalist-style-modern-aesthetic-free-png.webp"
+                        alt="home_page">
                 </div>
                 <div class="search">
                     <input type="text" placeholder="Type Song Name">
@@ -39,19 +40,11 @@
     </header>
     <main>
         <div class="left">
-            <div class="playListDrop">
-
-
-
+            <div class="library">
+                <h2>Library</h2>
+                <ul class="songList"></ul>
             </div>
-
-            <div class="songList">
-                <ul></ul>
-            </div>
-
-
         </div>
-
 
         <div class="right">
             <div class="box">
@@ -59,20 +52,19 @@
 
                 <div class="card_box">
 
-                    <!-- Naruto SONGS -->
-                    <div class="card" data-folder="emotional" data-song-index="0"> 
+                    <div class="card" data-folder="emotional">
                         <div class="image">
-                            <img src="img/141275-1080x1920-iphone-full-hd-naruto-wallpaper-photo.webp" alt="song_image">
+                            <img src="img/141275-1080x1920-iphone-full-hd-naruto-wallpaper-photo.webp"
+                                alt="song_image">
                         </div>
                         <div class="title">
                             <h4>Naruto Pain</h4>
                             <p>Bg Music By Naruto</p>
                         </div>
-                        <button class="playBtn">Play</button>
+                        <button class="playBtn"></button>
                     </div>
 
-                    <!-- EMOTIONAL SONGS -->
-                    <div class="card" data-folder="emotional" data-song-index="0">
+                    <div class="card" data-folder="emotional">
                         <div class="image">
                             <img src="img/wp11681827.webp" alt="song_image">
                         </div>
@@ -80,11 +72,10 @@
                             <h4>Emotional Songs</h4>
                             <p>Relaxing | Sad | Calm</p>
                         </div>
-                        <button class="playBtn">Play</button>
+                        <button class="playBtn"></button>
                     </div>
 
-                    <!-- HARD SONGS -->
-                    <div class="card" data-folder="hard" data-song-index="0">
+                    <div class="card" data-folder="hard">
                         <div class="image">
                             <img src="img/wp11681827.webp" alt="song_image">
                         </div>
@@ -92,14 +83,13 @@
                             <h4>Hard Songs</h4>
                             <p>Hype | Battle | Motivation</p>
                         </div>
-                        <button class="playBtn">Play</button>
+                        <button class="playBtn"></button>
                     </div>
 
                 </div>
             </div>
 
             <hr>
-            <!-- footer -->
             <div class="foot">
                 <div class="b">
                     <li>
@@ -138,9 +128,12 @@
                     <li>Record</li>
                 </div>
                 <div class="b">
-                    <img src="img/74310-instagram-icons-media-computer-social-logo-thumb.webp" alt="social_media_png">
-                    <img src="img/74310-instagram-icons-media-computer-social-logo-thumb.webp" alt="social_media_png">
-                    <img src="img/74310-instagram-icons-media-computer-social-logo-thumb.webp" alt="social_media_png">
+                    <img src="img/74310-instagram-icons-media-computer-social-logo-thumb.webp"
+                        alt="social_media_png">
+                    <img src="img/74310-instagram-icons-media-computer-social-logo-thumb.webp"
+                        alt="social_media_png">
+                    <img src="img/74310-instagram-icons-media-computer-social-logo-thumb.webp"
+                        alt="social_media_png">
                 </div>
             </div>
 
@@ -152,21 +145,32 @@
 
         </div>
     </main>
+    
     <footer>
-        
-        <div class="play">
-            <div class="hidden">
+        <audio id="audioPlayer"></audio> <div class="play">
+            <div class="song-details">
                 <div class="detail">
-                <ul><li></li></ul>
+                    <span class="song-title">Select a song</span>
+                </div>
             </div>
+
+            <div class="player-controls">
+                <div class="play_btn">
+                    <button class="pre"><img src="img/previous-stroke-standard.svg" alt="pre"></button>
+                    <button class="pause"><img src="img/play-circle-stroke-rounded.svg" alt="play"></button>
+                    <button class="next"><img src="img/next-stroke-standard.svg" alt="next"></button>
+                </div>
+                <div class="seek-bar-container">
+                    <span class="current-time">0:00</span>
+                    <div class="seek-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <span class="total-duration">0:00</span>
+                </div>
             </div>
-            <div class="play_btn">
-                <button class="pre"><img src="img/previous-stroke-standard.svg" alt="pre"></button>
-                <button class="pause"><img src="img/play-circle-stroke-rounded.svg" alt="pause"></button>
-                <button class="next"><img src="img/next-stroke-standard.svg" alt="next"></button>
-            </div>
-            <div class="audio">
-                <audio id="audioPlayer" controls></audio>
+
+            <div class="volume-controls">
+                <input type="range" min="0" max="100" value="100" class="volume-slider">
             </div>
         </div>
     </footer>
